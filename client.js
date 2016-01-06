@@ -2,6 +2,9 @@ $( document ).ready(function() {
   
 
   for(var i=0; i<1000; i++){
+
+
+  		console.log('Socket for channel::::'+i);		
     
       var socket = io(); // initialise socket.io connection
       socket.emit( 'join room' , i+'');
