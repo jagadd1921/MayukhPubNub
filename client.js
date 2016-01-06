@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   
 
-  for(var i=0; i<1000; i++){
+  for(var i=0; i<5000; i++){
 
 
   		console.log('Socket for channel::::'+i);		
