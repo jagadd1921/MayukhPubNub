@@ -12,10 +12,11 @@ $( document ).ready(function() {
 
       socket.on( i+'' ,  function(data){
 
-          var txt3 = document.createElement("p");  // Create with DOM
-          txt3.innerHTML = "Channel:::"+data;
+          //var txt3 = document.createElement("p");  // Create with DOM
+          //txt3.innerHTML = "Channel:::"+data;
 
-          $('#main').append(txt3);
+          //$('#main').append(txt3);
+          $('#main').text(data);
 
       });
 
