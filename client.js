@@ -6,7 +6,8 @@ $( document ).ready(function() {
 
   		console.log('Socket for channel::::'+i);		
     
-      var socket = io(); // initialise socket.io connection
+      //var socket = io(); // initialise socket.io connection
+      var socket = io.connect('', {transports:['websocket']});
       socket.emit( 'join room' , i+'');
 
       socket.on( i+'' ,  function(data){
